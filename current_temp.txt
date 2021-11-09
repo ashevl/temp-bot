@@ -1,4 +1,0 @@
-The time is 18:52:11.
-
-The current temperature is 20.1C.
-The current humidity is 67.4%
