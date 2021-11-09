@@ -12,6 +12,9 @@ def dht22_to_text():
 	import board
 	import adafruit_dht
 
+	x = datetime.datetime.now()
+	current_time = x.strftime("%X")
+
 	dhtDevice = adafruit_dht.DHT22(board.D4, use_pulseio=False)
 
 	temp = dhtDevice.temperature
@@ -21,10 +24,8 @@ def dht22_to_text():
 	temp = dhtDevice.temperature
 	hum = dhtDevice.humidity
 
-	x = datetime.datetime.now()
-	current_time = x.strftime("%X")
 
-	text = "The time is {}.\n\nThe current temperature is {}C.\nThe current humidity is {}%"
+	text = "The time is {}.\n\nThe current temperature is {}\N{DEGREE SIGN}C.\nThe current humidity is {}%"
 
 	f = open("current_temp.txt", "w")
 	f.write(text.format(current_time,temp,hum))

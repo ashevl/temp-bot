@@ -1,0 +1,15 @@
+build
+*.egg-info
+*.pyc
+setuptools-*
+*.so
+dist
+**/temperature_project/auth.py
+**/temperature_project/test.py
+**/temperature_project/current_temp.txt
+**/temperature_project/__pycache__/
+auth.py
+test.py
+current_temp.txt
+__pycache__
+__pycache__/
