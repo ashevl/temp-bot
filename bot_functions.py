@@ -25,7 +25,7 @@ def dht22_to_text():
 	hum = dhtDevice.humidity
 
 
-	text = "The time is {}.\n\nThe current temperature is {}\N{DEGREE SIGN}C.\nThe current humidity is {}%"
+	text = "The time is {}.\n\nThe current temperature is {}\N{DEGREE SIGN}C.\nThe current humidity is {}%."
 
 	f = open("current_temp.txt", "w")
 	f.write(text.format(current_time,temp,hum))
